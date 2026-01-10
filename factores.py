@@ -1,3 +1,5 @@
+import datetime
+
 def find_factors(number):
   """
   Encuentra los factores de un número entero positivo.
@@ -19,9 +21,16 @@ def find_factors(number):
 # Solicitar el número al usuario
 number = int(input("Ingrese un número entero positivo: "))
 
+# Inicializa cronometro 
+TInicio = datetime.datetime.now()
+
 # Encontrar y mostrar los factores
 factors = find_factors(number)
 if factors:
+  # Calcular y mostrar el tiempo transcurrido
+  TFin = datetime.datetime.now() - TInicio
+  print(f"Tiempo total: {TFin}")
+
   print(f"Los factores de {number} son:", factors)
 else:
   print(f"El número {number} no tiene factores.")
