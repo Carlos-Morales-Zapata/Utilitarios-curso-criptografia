@@ -31,7 +31,8 @@ def pollard_rho(n):
     return d
 
 # Ejemplo con un número de 15 dígitos (difícil para el código anterior)
-numero_grande = 100000000000031 * 100000000000037 # Producto de dos primos
+#numero_grande = 100000000000031 * 100000000000037 # Producto de dos primos
+numero_grande = 1000100016000700063
 print(f"Factorizando: {numero_grande}...")
 
 inicio = time.time()

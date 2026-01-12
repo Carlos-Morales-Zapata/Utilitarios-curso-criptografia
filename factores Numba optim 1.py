@@ -4,7 +4,7 @@ import datetime
 
 # @njit(parallel=True)   --- No es útil en este caso
 
-#@njit
+@njit
 def find_factors(number):
   """
   Encuentra los factores de un número entero positivo.
